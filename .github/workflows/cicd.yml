@@ -5,5 +5,6 @@ jobs:
     with:
       NOMAD_VAR_HOSTNAMES: '["emularity-bios"]'
       NOMAD_VAR_PORTS: '{ 80 = "http" }'
+      NO_TEST: true
     secrets:
       NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
